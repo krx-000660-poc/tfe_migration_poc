@@ -70,7 +70,8 @@ Switzerland West          switzerlandwest      (Europe) Switzerland West
 UK West                   ukwest               (Europe) UK West
 UAE Central               uaecentral           (Middle East) UAE Central
 Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
-```bash
+```
+
 
 
 ### Reference

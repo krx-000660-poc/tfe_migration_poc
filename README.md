@@ -78,3 +78,62 @@ Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
 - [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
 - [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-gb/azure/azure-resource-manager/management/resource-name-rules)
 - [Workspace Naming](https://www.terraform.io/docs/cloud/workspaces/naming.html)
+
+
+### Workspace rule
+
+{서비스}{용도}\_{대분류}\_{중분류}\_{소분류}
+
+- 서비스 : cjfw
+
+- 용도
+
+  | 용도                     | 표기  |
+  | ----------------------- | ---- |
+  | 공통 (ALL)               | A    |
+  | 개발 (Development)       | D    |
+  | 검증 (Quality Assurance) | Q    |
+  | 관리 (Management)        | M    |
+  | 운영 (Production)        | P    |
+
+- 대분류 :
+
+  - Private
+  - Public
+  - ALL
+  - {Region code}
+
+-  중분류 :
+
+  - 용도 : `before` `after`
+  - 서비스 단위 : `net` `inf` `db`
+
+- 소분류 :  리소스 이름
+
+
+
+### region code
+
+| Code  | Original Code    | 이름                            |
+| :---- | :--------------- | :------------------------------ |
+| usea2 | us-east-2      | 미국 동부(오하이오)             |
+| usea1 | us-east-1      | 미국 동부(버지니아 북부)        |
+| uswe1 | us-west-1      | 미국 서부(캘리포니아 북부 지역) |
+| uswe2 | us-west-2      | 미국 서부(오레곤)               |
+| afso1 | af-south-1     | 아프리카(케이프타운)            |
+| apea1 | ap-east-1      | 아시아 태평양(홍콩)             |
+| apso1 | ap-south-1     | 아시아 태평양(뭄바이)           |
+| apne3 | ap-northeast-3 | 아시아 태평양(오사카-로컬)      |
+| apne2 | ap-northeast-2 | 아시아 태평양(서울)             |
+| apse1 | ap-southeast-1 | 아시아 태평양(싱가포르)         |
+| apse2 | ap-southeast-2 | 아시아 태평양(시드니)           |
+| apne1 | ap-northeast-1 | 아시아 태평양(도쿄)             |
+| cace1 | ca-central-1   | 캐나다(중부)                    |
+| euce1 | eu-central-1   | 유럽(프랑크푸르트)              |
+| euwe1 | eu-west-1      | 유럽(아일랜드)                  |
+| euwe2 | eu-west-2      | 유럽(런던)                      |
+| euso1 | eu-south-1     | 유럽(밀라노)                    |
+| euwe3 | eu-west-3      | 유럽(파리)                      |
+| euno1 | eu-north-1     | 유럽(스톡홀름)                  |
+| meso1 | me-south-1     | 중동(바레인)                    |
+| saea1 | sa-east-1      | 남아메리카(상파울루)            |

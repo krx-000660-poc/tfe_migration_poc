@@ -95,6 +95,15 @@ Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
   | 검증 (Quality Assurance) | Q    |
   | 관리 (Management)        | M    |
   | 운영 (Production)        | P    |
+  
+  |Environment |	Code|
+|Development|	dev|
+|Test	|test|
+|System Integration Testing	|sit |
+|User Acceptance Test	|uat|
+|Staging |	stag |
+|Pre-production	|pre |
+|Production	|prod|
 
 - 대분류 :
 

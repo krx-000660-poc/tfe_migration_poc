@@ -75,5 +75,5 @@ Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
 
 
 ### Reference
-[Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
-[Naming rules and restrictions for Azure resources] (https://docs.microsoft.com/en-gb/azure/azure-resource-manager/management/resource-name-rules)
+- [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming)
+- [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-gb/azure/azure-resource-manager/management/resource-name-rules)

@@ -80,6 +80,7 @@ Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
 - Azure [Naming rules and restrictions for Azure resources](https://docs.microsoft.com/en-gb/azure/azure-resource-manager/management/resource-name-rules)
 - AWS [Standardize Names for AWS Resources for EC2 Instance](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/ec2-instances.html)
 - AWS [Standardize Names for AWS Resources for Other AWS Resources](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/other-aws-resource-types.html)
+- [Cloud Naming Convention](https://stepan.wtf/cloud-naming-convention/)
 - [Workspace Naming](https://www.terraform.io/docs/cloud/workspaces/naming.html)
 
 

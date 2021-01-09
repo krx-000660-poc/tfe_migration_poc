@@ -89,44 +89,37 @@ Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
 
 ### Workspace rule
 
-{서비스}{용도}\_{대분류}\_{중분류}\_{소분류}
+{서비스|프로젝트명}{환경}\_{대분류}\_{중분류}\_{소분류}
 
-- 서비스 : cjfw
+- 서비스 : hcp_tfe
 
-- 용도
-
-  | 용도                     | 표기  |
-  | ----------------------- | ---- |
-  | 공통 (ALL)               | A    |
-  | 개발 (Development)       | D    |
-  | 검증 (Quality Assurance) | Q    |
-  | 관리 (Management)        | M    |
-  | 운영 (Production)        | P    |
-  
+- 환경
+ 
 |Environment |	Code|
 | ----------------------- | ---- |
-|Development|	dev|
-|Test	|test|
-|System Integration Testing	|sit |
-|User Acceptance Test	|uat|
-|Staging |	stag |
-|Pre-production	|pre |
-|Production	|prod|
+|Development|	dev / D|
+|Test	|test / T|
+| Quality Assurance | qa /Q   |
+|System Integration Testing	|sit /I| 
+|User Acceptance Test	|uat/ A|
+|Staging |	stag /S|
+|Production	|prod / P|
+|Disaster Recovery	|dr /R|
 
-- 대분류 :
 
-  - Private
-  - Public
-  - ALL
-  - {Region code}
+- 대분류 : 용도
 
--  중분류 :
+  - Private (pri)
+  - Public (pub)
+  - common (공통) com
+  - 
 
-  - 용도 : `before` `after`
-  - 서비스 단위 : `net` `inf` `db`
-
-- 소분류 :  리소스 이름
-
+-  중분류 : Region Code
+-  소분류 : 
+  - 서비스 단위 `net` `inf` `db`
+  - 리소스 타입: `aks`
+  
+예) tfeD_A_kc_inf_aks : TFE로 관리하는 개발 환경, 한국 중부, 인프라, AKS
 
 
 ### region code

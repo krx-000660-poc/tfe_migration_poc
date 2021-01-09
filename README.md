@@ -23,6 +23,7 @@
 
 
 - 대분류 : Region Code
+
 <table class="tg">
   <tr>
     <th class="tg-fymr">Geography</th>
@@ -325,6 +326,7 @@
     <td class="tg-c3ow">UN</td>
   </tr>
 </table>
+
 - 중분류 : 용도
    - Private (pri)
    - Public (pub)

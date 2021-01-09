@@ -6,7 +6,7 @@
 
 > {서비스|프로젝트명}{환경}\_{대분류}\_{중분류}\_{소분류}
 
-- 서비스|프로젝트명 : hcp_tfe
+- 서비스|프로젝트명 : poc
 
 - 환경
  
@@ -333,18 +333,20 @@
    - common (공통) com
 -  소분류 : 
    - 서비스 단위 `net` `inf` `db`
-   - 리소스 타입: `aks`
+   - 리소스 타입: `aks` `vm` `db`
 
 
 ```
 예) 
-tfeD_KC_com_inf_aks : TFE로 관리하는 개발 환경, 한국 중부,공통, 인프라, AKS
-tfeD_KS_pri_net_db: TFE로 관리하는 개발 환경, 한국 남부, 프라이빗, 네트워크 인프라, db 리소스
+pocD_KC_com_inf_aks : PoC 개발 환경, 한국 중부,공통, 인프라, AKS
+pocD_KS_pri_net_vm: PoC 개발 환경, 한국 남부, 프라이빗, 네트워크 인프라, VM 리소스
 ```
 
 
 
 
+
+---
 
 ### Reference
 - Azure [Define your naming convention](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming) 

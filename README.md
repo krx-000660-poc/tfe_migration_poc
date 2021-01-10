@@ -361,6 +361,12 @@ pocD_KS_pri_net_vm: PoC 개발 환경, 한국 남부, 프라이빗, 네트워크
 - [Workspace Naming](https://www.terraform.io/docs/cloud/workspaces/naming.html) : COMPONENT-ENVIRONMENT-REGION
 
 
+### AKS Related
+ - [Azure의 Terraform 설명서](https://docs.microsoft.com/ko-kr/azure/developer/terraform/)
+ - [terraform-providers/terraform-provider-azurerm](https://github.com/terraform-providers/terraform-provider-azurerm/tree/master/examples/kubernetes)
+ - [Manage Kubernetes Resources via Terraform](https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider?in=terraform/kubernetes)
+
+
 
 ### Azure Region Code
 ```

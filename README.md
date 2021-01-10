@@ -365,6 +365,7 @@ pocD_KS_pri_net_vm: PoC 개발 환경, 한국 남부, 프라이빗, 네트워크
  - [Azure의 Terraform 설명서](https://docs.microsoft.com/ko-kr/azure/developer/terraform/)
  - [terraform-providers/terraform-provider-azurerm](https://github.com/terraform-providers/terraform-provider-azurerm/tree/master/examples/kubernetes)
  - [Manage Kubernetes Resources via Terraform](https://learn.hashicorp.com/tutorials/terraform/kubernetes-provider?in=terraform/kubernetes)
+ - [Provision an AKS Cluster (Azure)](https://learn.hashicorp.com/tutorials/terraform/aks?in=terraform/kubernetes)
 
 
 

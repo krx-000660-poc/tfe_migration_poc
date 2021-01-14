@@ -440,3 +440,61 @@ UAE Central               uaecentral           (Middle East) UAE Central
 Brazil Southeast          brazilsoutheast      (South America) Brazil Southeast
 ```
 
+```
+code validation sample
+variable "common_tags" {
+  description = "필수 공통 TAG 7개"
+  type        = map(any)
+}
+
+variable "prefix" {
+  description = "업무 구분 mis/cmn"
+}
+
+variable "env" {
+  description = "배포 환경에 대한 설정. prod/dev/poc"
+}
+
+variable "loc_code" {
+  description = "배포 지역에 대한 코드 중부 (koce)/남부 (koso)"
+  
+  validation {
+    condition = var.loc_code == "koce" || var.loc_code == "koso"
+    error_message = "Error : \n 지원되지 않는 배포 지역입니다. \n 다음 배포 지역(Region)만 사용 가능합니다. \n \t - 한국 중부 : koce \n \t - 한국 남부 : koso \n ."
+  }
+}
+
+variable "location" {
+  description = "배포 지역 설정 한국 중부(koreacentral), 한국 남부(koreasouth)"
+  
+  validation {
+    condition = contains(["koreacentral", "Korea Central", "koreasouth", "Korea South"], var.location)
+    error_message = "Error : \n 지원되지 않는 배포 지역입니다. \n 다음 배포 지역(Region)만 사용 가능합니다. \n \t - 한국 중부 : koreacentral , Korea Central \n \t - 한국 남부 : koreasouth, Korea South \n ."
+  }
+}
+
+# misO_KC_inf_aks용 Varaibles
+variable "k8s_version" {
+  description = "AKS에서 사용할 K8S버전 지정"
+  validation {
+    condition = contains(["17","18","19"], substr(var.k8s_version,2,2))
+    error_message = "Error : \n 지원되지 않는 Kubernetes 버전입니다. \n 다음 버전만 사용 가능합니다. \n \t - 1.18.10 \n \t - 1.19.1 \n \t - 1.19.3 \n ."
+  }
+}
+
+variable "aks_vm_size" {
+  description = "default_node_pool"
+  type = string
+  
+  # Validation error message must be at least one full English sentence starting with an uppercase letter and ending with a period or question mark.(\".)
+  validation {
+    condition = contains(["Standard_D4s_v3" , "Standard_D2s_v3" , "Standard_D3_v2", "Standard_D16s_v3", "Standard_E8s_v3", "Standard_F4s"], var.aks_vm_size)
+    error_message = "Error : \n 지원되지 않는 VM Size입니다. \n 다음 VM Size만 사용 가능합니다. \n \t - Standard_D4s_v3 \n \t - Standard_D2s_v3 \n \t - Standard_D3_v2\n \t - Standard_D16s_v3\n \t - Standard_E8s_v3 \n \t - Standard_F4s \n ."
+  }
+}
+
+variable "fwprivate_ip" {
+  description = "Firewall private ip for AKS Node Pool" 
+}
+```
+

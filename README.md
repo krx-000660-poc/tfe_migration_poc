@@ -498,3 +498,5 @@ variable "fwprivate_ip" {
 }
 ```
 
+
+https://docs.microsoft.com/ko-kr/azure/app-service/scripts/terraform-secure-backend-frontend

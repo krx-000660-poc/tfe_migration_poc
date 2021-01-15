@@ -500,3 +500,11 @@ variable "fwprivate_ip" {
 
 
 https://docs.microsoft.com/ko-kr/azure/app-service/scripts/terraform-secure-backend-frontend
+
+```
+output "ws_names" {
+  #value = azurerm_container_registry.mis_poc_acr.id
+   value = [ for ws_names in setunion(var.workspace_common, var.workspace_net, var.workspace_inf) : ws_names]
+}
+
+```
